@@ -17,10 +17,14 @@
         <div class="mb-4">
             <label for="status" class="block text-[#26474E] font-semibold">Statut</label>
             <select name="status" id="status" class="w-full p-2 border border-[#76CDCD] rounded-lg">
-                <option value="en cours">En cours</option>
-                <option value="terminé">Terminé</option>
-                <option value="en attente">En attente</option>
+                <option value="en_cours">En cours</option>
+                <option value="termine">Terminé</option>
+                <option value="en_attente">En attente</option>
             </select>
+        </div>
+        <div class="mb-4">
+            <label class="block text-[#26474E] font-semibold">Date de début</label>
+            <input type="date" name="start_date" class="w-full border border-gray-300 p-2 rounded-lg">
         </div>
         <div class="mb-4">
             <label for="end_date" class="block text-[#26474E] font-semibold">Date de fin</label>

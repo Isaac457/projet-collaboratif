@@ -27,8 +27,9 @@ class ProjectController extends Controller
         $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'status' => 'required|in:en cours,terminé,en attente',
-            'end_date' => 'nullable|date',
+            'status' => 'required|in:en_cours,termine,en_attente',
+            'start_date' => 'required|date',
+            'end_date' => 'nullable|date|after_or_equal:start_date',
         ]);
 
         Project::create([
