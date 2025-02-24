@@ -11,7 +11,7 @@
         <p class="text-sm text-gray-500">Date de fin: {{ $project->end_date ?? 'Non définie' }}</p>
         
         <div class="mt-4">
-            <a href="{{ route('projects.edit', $project) }}" class="bg-[#F27438] text-white px-4 py-2 rounded-lg">Modifier</a>
+            <a href="{{ route('projects.edit', $project) }}" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Modifier</a>
             <form action="{{ route('projects.destroy', $project) }}" method="POST" class="inline-block">
                 @csrf
                 @method('DELETE')
@@ -27,7 +27,7 @@
 
         @if($tasks->isEmpty())
             <p class="text-gray-500 mt-2">Aucune tâche pour ce projet.</p>
-            <a href="{{ route('projects.tasks.create', $project) }}" class="bg-[#F27438] text-white px-4 py-2 rounded-lg inline-block mt-4">
+            <a href="{{ route('projects.tasks.create', $project) }}" class="bg-blue-500 text-white  px-4 py-2 rounded-lg inline-block mt-4">
                 + Ajouter une tâche
             </a>
         @else
@@ -59,7 +59,7 @@
                 </tbody>
             </table>
 
-            <a href="{{ route('projects.tasks.create', ['project' => $project]) }}" class="bg-white text-[#26474E] border border-[#26474E] px-4 py-2 rounded-lg inline-block mt-4">
+            <a href="{{ route('projects.tasks.create', ['project' => $project]) }}" class="bg-blue-500 text-white  px-4 py-2 rounded-lg inline-block mt-4">
                 + Ajouter une tâche
             </a>
         @endif
