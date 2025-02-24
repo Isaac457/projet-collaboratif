@@ -1,3 +1,5 @@
+Il y a une erreur dans le projet le reste les quatre première questions du projet sont reussies. seulement que l'erreur empeche l'affichage
+
 # Application de Gestion de Projets Collaboratifs
 
 Cette application Laravel permet aux utilisateurs d'organiser des projets en équipe, d'ajouter des tâches à un projet, de suivre l'avancement des tâches et de collaborer en temps réel.
@@ -17,8 +19,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 1.  **Cloner le dépôt :**
 
     ```
-    git clone <URL_DE_VOTRE_DEPOT>
-    cd <nom_du_repertoire_du_projet>
+    git clone https://github.com/Isaac457/projet-collaboratif
     ```
 
 2.  **Installer les dépendances Composer :**
