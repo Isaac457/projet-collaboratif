@@ -55,10 +55,10 @@ Route::middleware(['auth'])->group(function () {
 // Protected Routes (Authentication Required)
 Route::middleware(['auth'])->group(function () {
     Route::resource('projects', ProjectController::class);
-    Route::prefix('projects/{project}')->group(function () {
-        Route::resource('tasks', TaskController::class)->except(['index']);
-        Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');
-    });
+
+    // Déclarer les routes pour les tâches liées aux projets
+    Route::resource('projects.tasks', TaskController::class)->except(['index']);
+    Route::get('projects/{project}/tasks', [TaskController::class, 'index'])->name('tasks.index');
 });
 
 

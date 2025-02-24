@@ -48,8 +48,10 @@ class ProjectController extends Controller
     {
         // Vérifier que l'utilisateur est bien le propriétaire du projet
         $this->authorize('view', $project);
+        $tasks = $project->tasks; // Récupérer les tâches associées
+        return view('projects.show', compact('project', 'tasks'));
         
-        return view('projects.show', compact('project'));
+        
     }
 
     // Afficher le formulaire d'édition d'un projet
