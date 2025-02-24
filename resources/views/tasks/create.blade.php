@@ -26,7 +26,7 @@
                 <option value="suspendue">Suspendue</option>
             </select>
         </div>
-        <button type="submit" class="bg-[#F27438] text-black px-4 py-2 rounded-lg">Créer</button>
+        <button type="submit" class="bg-white text-[#26474E] border border-[#26474E] px-4 py-2 rounded-lg">Créer</button>
     </form>
 </div>
 @endsection

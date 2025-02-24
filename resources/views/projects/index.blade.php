@@ -4,7 +4,7 @@
 @section('content')
 <div class="container mx-auto p-6">
     <h1 class="text-3xl font-bold text-[#26474E] mb-6">Mes Projets</h1>
-    <a href="{{ route('projects.create') }}" class="bg-[#F27438] text-black px-4 py-2 rounded-lg">Créer un Projet</a>
+    <a href="{{ route('projects.create') }}" class="bg-white text-[#26474E] border border-[#26474E] px-4 py-2 rounded-lg">Créer un Projet</a>
     <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         @foreach ($projects as $project)
             <div class="bg-white p-4 shadow-lg rounded-xl border-l-4 border-[#76CDCD]">

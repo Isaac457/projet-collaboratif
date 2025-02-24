@@ -27,7 +27,7 @@
             <label for="end_date" class="block text-[#26474E] font-semibold">Date de fin</label>
             <input type="date" name="end_date" id="end_date" value="{{ $project->end_date }}" class="w-full p-2 border border-[#76CDCD] rounded-lg">
         </div>
-        <button type="submit" class="bg-[#F27438] text-white px-4 py-2 rounded-lg">Mettre à jour</button>
+        <button type="submit" class="bg-white text-[#26474E] border border-[#26474E] px-4 py-2 rounded-lg">Mettre à jour</button>
     </form>
 </div>
 @endsection

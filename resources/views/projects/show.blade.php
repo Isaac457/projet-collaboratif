@@ -59,7 +59,7 @@
                 </tbody>
             </table>
 
-            <a href="{{ route('projects.tasks.create', ['project' => $project]) }}" class="bg-[#66B7AD] text-black px-4 py-2 rounded-lg inline-block mt-4">
+            <a href="{{ route('projects.tasks.create', ['project' => $project]) }}" class="bg-white text-[#26474E] border border-[#26474E] px-4 py-2 rounded-lg inline-block mt-4">
                 + Ajouter une tâche
             </a>
         @endif
