@@ -1,5 +1,3 @@
-Il y a une erreur dans le projet le reste les quatre première questions du projet sont reussies. seulement que l'erreur empeche l'affichage
-
 # Application de Gestion de Projets Collaboratifs
 
 Cette application Laravel permet aux utilisateurs d'organiser des projets en équipe, d'ajouter des tâches à un projet, de suivre l'avancement des tâches et de collaborer en temps réel.

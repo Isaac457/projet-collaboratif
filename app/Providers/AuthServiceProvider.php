@@ -24,7 +24,7 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->registerPolicies();
-        dd('AuthServiceProvider chargé');
+        // dd('AuthServiceProvider chargé');
 
         // Exemple de Gate pour vérifier si un utilisateur peut modifier un projet
         Gate::define('update-project', function ($user, $project) {
